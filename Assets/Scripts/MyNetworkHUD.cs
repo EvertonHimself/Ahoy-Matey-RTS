@@ -17,9 +17,10 @@ public class MyNetworkHUD : NetworkManager
 	/// <summary>
 	/// My start host method.
 	/// </summary>
-	public override void StartHost()
+	void MyStartHost()
 	{
 //		networkManager.StartHost();
+		StartHost();
 		Debug.Log ("Starting host at: " + Time.timeSinceLevelLoad);
 	}
 
