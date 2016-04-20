@@ -20,4 +20,12 @@ public class Player : NetworkBehaviour
 
 		transform.Translate (inputValue);
 	}
+
+	/// <summary>
+	/// Raises the start local player event.
+	/// </summary>
+	public override void OnStartLocalPlayer()
+	{
+		GetComponentInChildren<Camera>().enabled = true;
+	}
 }
